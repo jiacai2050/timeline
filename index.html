@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>大事记</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/timeliner.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="inc/colorbox.css" type="text/css" media="screen">
+</head>
+<body>
+	<div class="container">
+		<!-- <h1>写在前面</h1> -->
+		<!-- <p class="lead">时间过得真的很快，毕业到现在已经快半年了，很多事情也淡忘在忙忙碌碌的工作中，以前的梦想仿佛也离我渐行渐远</p> -->
+		
+		<div id="timeline" class="timeline-container">
+
+			<button class="timeline-toggle">+ 展开</button>
+
+			<br class="clear">
+
+			<div class="timeline-wrapper">
+				<h2 class="timeline-time"><span>1991</span></h2>
+				<dl class="timeline-series">
+					<dt id="19910219" class="timeline-event"><a>Hello World</a></dt>
+					<dd class="timeline-event-content" id="19910219EX">
+						<h3>1991年2月19号</h3>
+						<p><img src="http://img3.douban.com/view/photo/photo/public/p2213248335.jpg"/>
+						</p>
+						<p>一个有抱负的程序员破壳了</p>
+
+							<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+			<div class="timeline-wrapper">
+				<h2 class="timeline-time"><span>2014</span></h2>
+				<dl class="timeline-series">
+					<dt id="20140630" class="timeline-event"><a>加入 UCloud</a></dt>
+					<dd class="timeline-event-content" id="20140630EX">
+						<h3>2014年6月30号</h3>
+						<p>		做 hadoop 开发</p>
+
+						<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+					<dt id="20141122" class="timeline-event"><a>入手 MacBook pro Retina</a></dt>
+					<dd class="timeline-event-content" id="20141122EX">
+						<h3>2014年11月22号</h3>
+						<p>
+						终于入手 Mac 了，除了键盘需要适应外，其他都还好，有了 Retina 屏幕，眼睛都不用戴了 :-)
+						</p>
+
+							<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+
+
+			<br class="clear">
+		</div><!-- /#timelineContainer -->
+
+	</div><!-- /.container -->
+
+	<!-- GLOBAL CORE SCRIPTS -->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="inc/colorbox.js"></script>
+	<script type="text/javascript" src="js/timeliner.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.timeliner({
+				startOpen:['#19550828', '#19630828'],
+			});
+			$.timeliner({
+				timelineContainer: '#timeline-js',
+				timelineSectionMarker: '.milestone',
+				oneOpen: true,
+				startState: 'flat',
+				expandAllText: '+ Show All',
+				collapseAllText: '- Hide All'
+			});
+			// Colorbox Modal
+			//$(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+		});
+	</script>
+
+</body>
+</html>
