@@ -1,0 +1,25 @@
+{
+  "name": "timeline",
+  "version": "1.0.0",
+  "description": "Fork from https://github.com/technotarek/timeliner",
+  "main": "tl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiacai2050/timeline.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiacai2050/timeline/issues"
+  },
+  "homepage": "https://github.com/jiacai2050/timeline#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "markdown": "^0.5.0",
+    "moment": "^2.10.6",
+    "underscore": "^1.8.3"
+  }
+}
