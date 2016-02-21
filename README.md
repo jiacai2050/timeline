@@ -24,4 +24,4 @@ $TIMELINE/tl.js d
 
 ## License
 
-All nodejs Code licensed under [MIT](http://liujiacai.net/license/MIT.html?year=2015).
+All Node.js codes licensed under [MIT](http://liujiacai.net/license/MIT.html?year=2015).
